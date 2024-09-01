@@ -6,17 +6,32 @@ import { IoMail, IoLocationSharp } from "react-icons/io5";
 
 const contactDetail = [
   {
-    icon: <FaPhoneAlt className="text-gray-300" size={36} />,
+    icon: (
+      <FaPhoneAlt
+        className="text-gray-300 md:w-[36px] md:h-[36px] w-[24px] h-[24px]  "
+        size={36}
+      />
+    ),
     title: "Telefon",
     value: "+90 530 946 8761",
   },
   {
-    icon: <IoMail className="text-gray-300" size={36} />,
+    icon: (
+      <IoMail
+        className="text-gray-300 md:w-[36px] md:h-[36px] w-[24px] h-[24px] "
+        size={36}
+      />
+    ),
     title: "Mail",
     value: "semihshngl@gmail.com",
   },
   {
-    icon: <IoLocationSharp className="text-gray-300" size={36} />,
+    icon: (
+      <IoLocationSharp
+        className="text-gray-300 md:w-[36px] md:h-[36px] w-[24px] h-[24px] "
+        size={36}
+      />
+    ),
     title: "Konum",
     value: "İstanbul / Maltepe",
   },

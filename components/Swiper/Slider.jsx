@@ -13,7 +13,7 @@ const sliderItems = [
     icon: (
       <FaHtml5
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },
@@ -21,7 +21,7 @@ const sliderItems = [
     icon: (
       <FaCss3
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },
@@ -29,7 +29,7 @@ const sliderItems = [
     icon: (
       <FaJs
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },
@@ -37,7 +37,7 @@ const sliderItems = [
     icon: (
       <FaNodeJs
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },
@@ -45,7 +45,7 @@ const sliderItems = [
     icon: (
       <FaReact
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },
@@ -53,7 +53,7 @@ const sliderItems = [
     icon: (
       <RiNextjsFill
         fill="white"
-        className="w-[36px] h-[36px] md:w-[48px] md:h-[48px]"
+        className="w-[24px] h-[24px] md:w-[48px] md:h-[48px]"
       />
     ),
   },

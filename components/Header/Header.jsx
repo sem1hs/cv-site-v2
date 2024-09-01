@@ -75,9 +75,9 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "sticky top-0 left-0 z-30 px-6 md:px-2 py-8 md:py-12 transition-all",
+        "sticky top-0 left-0 z-30 px-6 md:px-2 md:py-12 transition-all py-8",
         {
-          "!py-6 md:py-8 bg-[#070707]": sticky,
+          "py-4 md:py-8 bg-[#070707]": sticky,
         }
       )}
     >
@@ -108,16 +108,16 @@ const Header = () => {
         <nav
           onClick={handleClick}
           className={clsx(
-            "fixed grid grid-rows-2 gap-y-8 top-0 -right-96 py-12 px-8 w-2/4 h-screen bg-[#070707] transition-all duration-700  md:hidden ",
-            { "!right-0 ": isOpen }
+            "fixed grid grid-rows-3 gap-y-8 top-0 right-0 translate-x-72 py-12 px-8 w-2/4 h-screen bg-[#070707] transition-all duration-700 md:hidden",
+            { "translate-x-0 ": isOpen }
           )}
         >
-          <ul className="flex flex-col items-center justify-between gap-4 mb-4">
+          <ul className="row-span-2 flex flex-col items-center justify-between gap-4 mb-8">
             {headerList.map((val, i) => (
               <HeaderItem key={i} info={val} />
             ))}
           </ul>
-          <ul className="flex flex-col items-center justify-between gap-4">
+          <ul className="flex flex-row items-center justify-between">
             {socialList.map((val, i) => (
               <SocialItem key={i} info={val} />
             ))}
