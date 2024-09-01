@@ -1,0 +1,4 @@
+.buttonPrimary {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(13, 5, 59) 0%, rgb(27, 20, 105) 67%);
+}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 15, 64, 1) 67%
+  );
+}
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+.heroTitle {
+  background: linear-gradient(
+    90deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(116, 115, 120, 1) 87%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,4 @@
+.card {
+  background: rgb(7, 7, 7);
+  background: linear-gradient(270deg, rgb(11, 2, 48) 0%, rgb(9, 2, 36) 90%);
+}
