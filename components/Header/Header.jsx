@@ -6,6 +6,9 @@ import clsx from "clsx";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import SocialItem from "./SocialItem";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
+import ppLogo from "@/public/ppLogo.png";
+import Image from "next/image";
+import Link from "next/link";
 
 const headerList = [
   {
@@ -77,7 +80,7 @@ const Header = () => {
       className={clsx(
         "sticky top-0 left-0 z-30 px-4 md:px-2 md:py-12 transition-all py-8",
         {
-          "py-4 md:py-8 bg-[#070707]": sticky,
+          "!py-6 md:py-8 bg-[#070707]": sticky,
         }
       )}
     >
@@ -88,7 +91,14 @@ const Header = () => {
       >
         <div>
           {/* Logo */}
-          <p className="text-gray-300 text-xs md:text-base">Semih Sahinoglu</p>
+          {/* <p className="text-gray-300 text-xs md:text-base">Semih Sahinoglu</p> */}
+          <Link href="/">
+            <Image
+              src={ppLogo}
+              alt="Pp Logo"
+              className="w-[36px] md:w-[64px]"
+            />
+          </Link>
         </div>
         <ul className="md:flex hidden items-center gap-12">
           {headerList.map((val, i) => (
@@ -110,7 +120,7 @@ const Header = () => {
         <nav
           onClick={handleClick}
           className={clsx(
-            "fixed grid grid-rows-3 gap-y-8 top-0 right-0 py-12 px-8 w-2/4 h-screen bg-[#070707] transition-all duration-700 md:hidden",
+            "fixed grid grid-rows-3 gap-y-8 top-0 right-0 pt-36 pb-2 px-8 w-2/4 h-screen bg-[#070707] transition-all duration-700 md:hidden",
             { "translate-x-0 ": isOpen, "translate-x-72": !isOpen }
           )}
         >

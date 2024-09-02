@@ -11,11 +11,7 @@
 body {
   width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(19, 15, 64, 1) 67%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #130f40 67%);
 }
 .swiper-slide {
   display: flex !important;
