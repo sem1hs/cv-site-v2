@@ -18,7 +18,11 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} relative`}>
         <ReduxProvider>
           <Popup />
-          <Header />
+          <Header
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-delay="100"
+          />
           {children}
           <Footer />
         </ReduxProvider>

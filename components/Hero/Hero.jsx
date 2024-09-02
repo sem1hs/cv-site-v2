@@ -6,7 +6,12 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <section className="md:py-28 py-20">
+    <section
+      className="md:py-28 py-20"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
       <div className="mx-auto max-w-2xl md:max-w-screen-2xl flex flex-col md:flex-row items-center gap-16">
         <div>
           <Image

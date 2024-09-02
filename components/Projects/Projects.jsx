@@ -8,7 +8,12 @@ const Projects = () => {
   const isProjectPage = path === "/projects";
 
   return (
-    <section className="py-28">
+    <section
+      className="py-28"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
       <div className="mx-auto max-w-screen-2xl">
         <h1 className="heroTitle text-gray-300 text-3xl md:text-5xl font-bold mb-8 md:mb-16 pb-3 text-center md:text-left">
           Projelerim

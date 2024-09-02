@@ -13,7 +13,10 @@ const ExperienceCard = ({ info }) => {
   };
   return (
     <div
-      className={`${styles.card} flex flex-col py-6 px-8 rounded-xl relative max-h-full overflow-hidden transition-all cursor-pointer`}
+      className={clsx(
+        `${styles.card} flex flex-col py-6 px-8 rounded-xl relative max-h-[150px] overflow-hidden transition-all duration-700 cursor-pointer`,
+        { " !max-h-full": isOpen }
+      )}
       onClick={handleClick}
     >
       <div className="mb-4 flex items-center justify-between">
@@ -25,15 +28,20 @@ const ExperienceCard = ({ info }) => {
           {isOpen && <FaMinus size={24} />}
         </button>
       </div>
-      <h3 className="text-gray-300 text-xl font-semibold mb-1">
+      <h3 className="text-gray-300 text-base md:text-xl font-semibold mb-1">
         {info.company}
       </h3>
-      <span className="text-gray-400 text-base mb-4">{info.title}</span>
+      <span className="text-gray-400 text-xs md:text-base mb-4">
+        {info.title}
+      </span>
       <p
-        className={clsx("text-gray-400 text-base leading-snug transition-all", {
-          "hidden ": !isOpen,
-          "block ": isOpen,
-        })}
+        className={clsx(
+          "text-gray-400 text-xs md:text-base leading-snug transition-all ",
+          {
+            "opacity-0 ": !isOpen,
+            "opacity-100 ": isOpen,
+          }
+        )}
       >
         {info.content}
       </p>
