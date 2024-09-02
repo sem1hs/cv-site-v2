@@ -25,7 +25,7 @@ const Experience = () => {
       data-aos-once="true"
       data-aos-delay="100"
     >
-      <div className="mx-auto max-w-2xl md:max-w-screen-2xl">
+      <div className="mx-auto max-w-2xl md:max-w-screen-2xl md:px-6">
         <h1 className="heroTitle text-4xl md:text-5xl font-bold pb-4 mb-12 text-center md:text-left">
           Eğitim & Deneyim
         </h1>

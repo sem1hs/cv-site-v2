@@ -12,7 +12,7 @@ const Hero = () => {
       data-aos-once="true"
       data-aos-delay="100"
     >
-      <div className="mx-auto max-w-2xl md:max-w-screen-2xl flex flex-col md:flex-row items-center gap-16">
+      <div className="mx-auto max-w-2xl md:max-w-screen-2xl flex flex-col md:flex-row items-center gap-16 md:px-8">
         <div>
           <Image
             src={pp}

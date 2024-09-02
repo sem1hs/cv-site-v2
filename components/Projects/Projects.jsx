@@ -3,6 +3,31 @@ import React from "react";
 import ProjectsCard from "./ProjectsCard";
 import { usePathname } from "next/navigation";
 
+import photoOne from "@/public/Ata-Medya-Landing-Page.png";
+
+const projectsCardTemp = [
+  {
+    title: "Ata Medya Landing Page",
+    content:
+      "Ata Medya için geliştirdiğim bu landing page, modern tasarımı ve kullanıcı dostu arayüzüyle öne çıkıyor. Responsive yapısı ve hızlı yüklenme süreleri sayesinde her cihazda mükemmel bir kullanıcı deneyimi sunuyor. ",
+    img: photoOne,
+  },
+  {
+    title: "",
+    content: "",
+    img: "",
+  },
+  {
+    title: "",
+    content: "",
+    img: "",
+  },
+  {
+    title: "",
+    content: "",
+    img: "",
+  },
+];
 const Projects = () => {
   const path = usePathname();
   const isProjectPage = path === "/projects";
@@ -14,7 +39,7 @@ const Projects = () => {
       data-aos-once="true"
       data-aos-delay="100"
     >
-      <div className="mx-auto max-w-screen-2xl">
+      <div className="mx-auto max-w-screen-2xl md:px-6">
         <h1 className="heroTitle text-gray-300 text-3xl md:text-5xl font-bold mb-8 md:mb-16 pb-3 text-center md:text-left">
           Projelerim
         </h1>
@@ -30,8 +55,8 @@ const Projects = () => {
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
-          {Array.from({ length: 4 }, (val, i) => (
-            <ProjectsCard key={i} />
+          {projectsCardTemp.map((val, i) => (
+            <ProjectsCard key={i} info={val} />
           ))}
         </div>
       </div>
