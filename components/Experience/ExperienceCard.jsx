@@ -14,8 +14,8 @@ const ExperienceCard = ({ info }) => {
   return (
     <div
       className={clsx(
-        `${styles.card} flex flex-col py-6 px-8 rounded-xl relative max-h-[150px] overflow-hidden transition-all duration-700 cursor-pointer`,
-        { " !max-h-full": isOpen }
+        `${styles.card} flex flex-col py-6 px-8 rounded-xl relative  overflow-hidden transition-all duration-700 cursor-pointer`,
+        { "!max-h-full": isOpen, "max-h-[150px]": !isOpen }
       )}
       onClick={handleClick}
     >

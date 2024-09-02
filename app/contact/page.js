@@ -1,16 +1,30 @@
+"use client";
+
 import Contact from "@/components/Contact/Contact";
 import ContactHero from "@/components/Contact/ContactHero";
-import React from "react";
+import React, { useEffect } from "react";
 
-const page = () => {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const Page = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
-    <div>
+    <main>
       {/* Contact Hero*/}
       <ContactHero />
       {/* Contact */}
       <Contact />
-    </div>
+    </main>
   );
 };
 
-export default page;
+export default Page;

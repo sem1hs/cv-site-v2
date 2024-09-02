@@ -4,8 +4,8 @@ import Projects from "@/components/Projects/Projects";
 import Technologies from "@/components/Technologies/Technologies";
 
 import Aos from "aos";
-import { useEffect } from "react";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {

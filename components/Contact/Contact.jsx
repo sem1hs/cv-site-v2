@@ -38,7 +38,12 @@ const contactDetail = [
 ];
 const Contact = () => {
   return (
-    <section className="pt-28 bg-[#070707]">
+    <section
+      className="pt-28 bg-[#070707]"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
       <div className="mx-auto max-w-screen-2xl">
         <h1 className="heroTitle text-gray-300 text-4xl md:text-5xl font-bold mb-16 pb-3 text-center md:text-left">
           Bana Ulaşın

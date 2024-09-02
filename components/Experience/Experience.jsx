@@ -19,7 +19,12 @@ const experienceTemp = [
 ];
 const Experience = () => {
   return (
-    <section className="py-28 bg-[#070707]">
+    <section
+      className="py-28 bg-[#070707]"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
       <div className="mx-auto max-w-2xl md:max-w-screen-2xl">
         <h1 className="heroTitle text-4xl md:text-5xl font-bold pb-4 mb-12 text-center md:text-left">
           Eğitim & Deneyim

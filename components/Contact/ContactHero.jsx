@@ -2,7 +2,12 @@ import React from "react";
 
 const ContactHero = () => {
   return (
-    <section className="py-28">
+    <section
+      className="py-28"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
       <div className="mx-auto max-w-screen-2xl">
         <h1 className="heroTitle text-gray-300 text-4xl md:text-5xl font-bold mb-16 pb-3 text-center md:text-left">
           Beraber Çalışalım

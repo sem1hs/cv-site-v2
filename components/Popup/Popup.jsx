@@ -21,7 +21,12 @@ const Popup = () => {
             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
             onClick={handleClick}
           ></div>
-          <div className="max-w-xs md:max-w-lg max-h-max my-auto mx-auto bg-[#070707] px-9 pt-20 pb-10 fixed inset-0 z-50 rounded-xl">
+          <div
+            className="max-w-xs md:max-w-lg max-h-max my-auto mx-auto bg-[#070707] px-9 pt-20 pb-10 fixed inset-0 z-50 rounded-xl"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-delay="100"
+          >
             <button
               className="inline-block absolute text-white top-4 right-4"
               onClick={handleClick}
