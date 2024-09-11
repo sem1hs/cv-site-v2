@@ -6,8 +6,6 @@ import clsx from "clsx";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import SocialItem from "./SocialItem";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
-import ppLogo from "@/public/ppLogo.png";
-import Image from "next/image";
 import Link from "next/link";
 
 const headerList = [
@@ -91,13 +89,11 @@ const Header = () => {
       >
         <div>
           {/* Logo */}
-          {/* <p className="text-gray-300 text-xs md:text-base">Semih Sahinoglu</p> */}
+
           <Link href="/">
-            <Image
-              src={ppLogo}
-              alt="Pp Logo"
-              className="w-[36px] md:w-[64px]"
-            />
+            <p className="text-gray-300 text-xs md:text-base">
+              Semih Sahinoglu
+            </p>
           </Link>
         </div>
         <ul className="md:flex hidden items-center gap-12">

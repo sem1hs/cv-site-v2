@@ -5,7 +5,7 @@ import styles from "./ProjectsCard.module.css";
 const ProjectsCard = ({ info }) => {
   return (
     <div
-      className={`px-4 py-5 md:px-8 md:py-10 rounded-xl ${styles.card} shadow-md`}
+      className={`px-4 py-5 md:px-8 md:py-10 rounded-xl ${styles.card} shadow-md max-w-[320px] md:max-w-[450px]`}
     >
       <div className="mb-6">
         {info.img && (
@@ -13,6 +13,8 @@ const ProjectsCard = ({ info }) => {
             src={info.img}
             alt="Projects Card Photo"
             className="rounded-md"
+            width={400}
+            height={200}
           />
         )}
       </div>
